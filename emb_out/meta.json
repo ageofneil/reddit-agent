@@ -1,0 +1,5 @@
+{
+  "model": "text-embedding-3-small",
+  "vector_dim": 1536,
+  "total": 12719
+}

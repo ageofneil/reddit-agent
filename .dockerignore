@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Node/OS junk
+.DS_Store
+
+# Project artifacts
+emb_out/
+data/
+.env
