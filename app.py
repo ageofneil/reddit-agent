@@ -289,11 +289,7 @@ st.title("⛵ BoatForumGPT — Reddit RAG (Parquet + FAISS)")
 # Sidebar settings
 with st.sidebar:
     st.header("Settings")
-    api_key_input = st.text_input("OpenAI API Key", type="password", value=API_KEY or "", help="If blank, I'll use environment/secrets.")
-    if api_key_input and api_key_input != API_KEY:
-        os.environ["API_KEY_OPENAI"] = api_key_input
-        API_KEY = api_key_input
-
+    
     k_threads = st.slider("Threads to include", 1, 12, TOP_K_THREADS_DEFAULT)
     per_thread = st.slider("Chunks per thread", 1, 6, PER_THREAD_DEFAULT)
     top_k_chunks = st.slider("Retriever pool size", 20, 200, TOP_K_CHUNKS_DEFAULT, step=10)
